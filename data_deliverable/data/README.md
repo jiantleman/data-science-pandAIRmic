@@ -20,7 +20,7 @@ The data in this table is sourced from the [COVID-19 US State Policy Database](h
 - quaratine_mandate(datetime64): The date a state first mandated that individuals arriving in their state from any state must undergo quarantine.  Did not include guidance or recommendations. Order must apply to entire state. Quarantine order must apply to visitors using all forms of transportation to enter the state (not just air travel)
 - quaratine_mandate_end(datetime64): The date a state ended all mandated quarantines for individuals arriving from out of state. If any statewide quarantines for out of state individuals is still  in effect or if the state never had a quarantine in effect  the column will bear a 0.
 - population_density(integer): The population density of the state in square miles
-- population(integer): The total 2018 populatio
+- population(integer): The total 2018 population
 
 ## flight table
 We downloaded two databases directly from the U.S. Department of Transportation’s Bureau of Transportation Statistics. From these databases, we collected information on the airports involved, month, and total passengers. After cleaning and organizing the data as explained in the tech report, we placed our flight data in the table flight_data in covid.db. Based on the data from USDOT, we list the total number of passengers flying between two states in every month from January until September 2020. All fields are required, and the STATE column will be used to connect aviation data with the COVID infection and policy data. We assumed that all states will have standard abbreviations, timescales will be reported in the month number, and that total passengers are reported as integers (since fractions of people cannot fly).
