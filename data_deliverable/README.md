@@ -4,7 +4,7 @@ This is the data deliverable's master directory! Please use the following shortc
 ### Data Spec ###
 - [Data spec](https://github.com/CS1951A-S21-Brown/pandaIrmic_final_project/blob/main/data_deliverable/data/README.md#data-spec)
 - [Sample data](https://github.com/CS1951A-S21-Brown/pandaIrmic_final_project/blob/main/data_deliverable/data/sample.db)
-- [Full data](https://github.com/CS1951A-S21-Brown/pandaIrmic_final_project/blob/main/Workspace/Data/data.db)
+- [Full data](https://drive.google.com/drive/folders/1qcEj9NDPTP8TRH5_IdozcTCYUVMCM_HX?usp=sharing)
 - [Data cleaning code](https://github.com/CS1951A-S21-Brown/pandaIrmic_final_project/blob/main/Workspace/Code/Data%20Cleaning.ipynb)
 
 ### Reports ###
