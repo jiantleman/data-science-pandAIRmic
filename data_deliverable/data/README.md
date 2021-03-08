@@ -1,8 +1,8 @@
 # Data Spec
 
-## Each of these tables refers to one of three tables in sample.db. We joined two tables together (two different flight databases) to form flight, fulfilling that requirement. Our full database file (data.db) and source files are linked to in a Google Drive folder because they exceed the Github storage limit.
+#### Each of these tables refers to one of three tables in sample.db. We joined two tables together (two different flight databases) to form flight, fulfilling that requirement. Our full database file (data.db) and source files are linked to in a Google Drive folder because they exceed the Github storage limit.
 
-#### covid table
+## covid table
 The data in this table is sourced from [The COVID Tracking Project](https://covidtracking.com/data), which collects and stores historical COVID-19 information from all 50 states + DC. For the purpose of this project we will use the following data:  
 - Date(datetime64): Date on which data was reported
 - State(text): Initials of 50 US states + Washington DC
