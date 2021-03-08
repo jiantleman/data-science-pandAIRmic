@@ -1,5 +1,7 @@
 # Data Spec
 
+## Each of these tables refers to one of three tables in sample.db 
+
 ## covid table
 The data in this table is sourced from [The COVID Tracking Project](https://covidtracking.com/data), which collects and stores historical COVID-19 information from all 50 states + DC. For the purpose of this project we will use the following data:  
 - Date(datetime64): Date on which data was reported
