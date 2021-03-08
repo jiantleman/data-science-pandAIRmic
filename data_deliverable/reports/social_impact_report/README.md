@@ -41,5 +41,5 @@ If infection rates do correlate strongly with air travel, then this might cause 
 ## Works Cited
 1. [The Covid Racial Data Tracker](https://covidtracking.com/race)
 2. [Air Travel and Covid-19 Research ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655026/) 
-3. 
+3. [Korean Passengers got Harassed on Flight](http://www.koreaherald.com/view.php?ud=20200214000523)
 
