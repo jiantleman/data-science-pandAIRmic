@@ -37,3 +37,9 @@ Technically, no one has explicitly agreed to the collection of their data, but t
 ***What are possible misinterpretations or misuses of your project results and what can be done to prevent them?***
 
 If infection rates do correlate strongly with air travel, then this might cause airlines to accelerate their adoption of requiring a proof of COVID-19 vaccination before allowing a passenger to board their flight. The access to COVID-19 vaccines is highly skewed towards rich, developed nations and communities. Thus, this will negatively affect people without health insurance, or communities with lower income in the US itself, and outside of the US this will discriminate against developing countries with less access to vaccine doses.
+
+## Works Cited
+1. [The Covid Racial Data Tracker](https://covidtracking.com/race)
+2. [Air Travel and Covid-19 Research ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655026/) 
+3. 
+
