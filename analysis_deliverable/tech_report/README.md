@@ -99,20 +99,27 @@ To visualize the results of our regression models, we created several regression
 
 1. **Model 1a** - Absolute number of air passenger arrivals vs absolute number of new COVID-19 cases
 ![data exploration](../visualizations/model_1a.png)
+
 2. **Model 1b** - Change in number of air passenger arrivals vs change in number of new COVID-19 cases
 ![data exploration](../visualizations/model_1b.png)
+
 3. **Model 1c** - Per capita number of air passenger arrivals vs per capita number of new COVID-19 cases
 ![data exploration](../visualizations/model_1c.png)
+
 3. **Model 1c(w)** - Per capita weighted arrivals vs per capita number of new COVID-19 cases
+
 ![data exploration](../visualizations/model_1cw.png)
 4. **Model 2** - Polynomial Regression
+
 ![data exploration](../visualizations/model_2.png)
 
 * The regression plots showing the scatter plot of the data points and the regression line that is fitted by the model allows us to visually evaluate the performance of the model. We can tell for instance that Model 1b is a poor model, as the variance of the independent variable is large for the same dependent variable. As a whole, we can see that models 1b, 1c, 1c(w) and 2 do not fit the data points that well, explaining the low R-squared values of these models.  
 
 **Map**
 
-![data exploration](../visualizations/map_viz.png)
+<img src="../visualizations/map_viz.png" alt="drawing" style="width:500px;"/>
+
+
 * We picked a map for our visualization because our data is inherently geographically, thus lending itself well to the idea of a map. Because the goal of our project is to identify correlation between air travel and COVID rates, we determined the best way to do this was a dual choropleth / bubble map that represents two types of data. The shading of each state represents the number of COVID cases per 100,000 residents while the size of the plane icon above each state represents the number of weighted passengers arriving. In summary, the graph allows for easy visual intuition of the question we are trying to answer: does air travel lead to higher rates of COVID? We picked this graph because we could easily show both the dependent and independent variable on one graph for any given month, which was our goal. Maps are also easily digestible and quite aesthetically appealing!
 * We could also have plotted these results as a scatter plot, potentially labelling each different point as a different state in a given month. But this would have been significantly messy if we labelled the states, or otherwise would leave out important geographical links from our visualization. As a result, a map was far and away the best possible option for this visualization.
 * The main challenge in producing the map was making it work aesthetically -- there is no easy way to create subplots of choropleth maps in Plotly (the Python package used to create our visualizations), requiring use of Adobe Illustrator to properly construct the visualization. As Plotly was new to me, there was somewhat of a learning curve as I learned how to tune the visualization to its desired form given the limitations of the software. Another challenge was displaying all the information we hoped to show without cluttering the figure; we believe this was achieved successfully due to our tasteful use of colors, airplane images for overlaid the bubble map, and overall row/column design of the figure.
@@ -125,6 +132,6 @@ To visualize the results of our regression models, we created several regression
 
 ### Discussion of visualization/explaining your results on a poster and a discussion of future directions.
 
-* An issue that we did not address in our analysis is the fact that it is very likely that causality runs in both directions - the number of inbound flight passengers impacts the number of positive Covid-19 cases, and vice-versa. When simultaneous causality bias arises, multiple regression and fixed effects models simply cannot eliminate the bias. Given more time we would love to implement an instrumental variable regression model for our analysis, as it can generally obtain a consistent estimator of the unknown causal coefficients when the regressors are correlated with the error term. 
+* An issue that we did not address in our analysis is the fact that it is very likely that causality runs in both directions - the number of inbound flight passengers impacts the number of positive Covid-19 cases, and vice-versa. When simultaneous causality bias arises, multiple regression and fixed effects models simply cannot eliminate the bias. Given more time we would love to implement an instrumental variable regression model for our analysis, as it can generally obtain a consistent estimator of the unknown causal coefficients when the regressors are correlated with the error term.
 
 * A potentially interesting extension for our project is to explore the relationship between international flight volume/national border restrictions and the spread of Covid-19 for specific country(ies). As the pandemic spread globally in 2020, many governments decided to shut down national borders in some shapes or forms. Intuitively strict border lockdowns may provide clearer flight passenger impacts than what we see in our current analysis for US states. Looking at certain countries that implemented strict border closures early on and saw limited local community spread of COVID-19, such as Singapore or Taiwan might allow us to investigate how effective border closures are as a measure to fight pandemics.
