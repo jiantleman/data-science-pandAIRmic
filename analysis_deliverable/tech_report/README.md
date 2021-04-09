@@ -1,11 +1,11 @@
 # Tech Report
 This is where you can type out your tech report.
 
-#### A defined hypothesis or prediction task, with clearly stated metrics for success.
+### A defined hypothesis or prediction task, with clearly stated metrics for success.
 
 A higher number of air passenger arrivals in a US state in a month is positively correlated with a higher number of new COVID-19 cases.
 
-#### Why did you use this statistical test or ML algorithm? Which other tests did you consider or evaluate? How did you measure success or failure? Why that metric/value? What challenges did you face evaluating the model? Did you have to clean or restructure your data?
+### Why did you use this statistical test or ML algorithm? Which other tests did you consider or evaluate? How did you measure success or failure? Why that metric/value? What challenges did you face evaluating the model? Did you have to clean or restructure your data?
 
 We used several regression models, namely simple linear regression, polynomial regression, multiple linear regression, and fixed effects, as we would like to determine the relationship between our predictor, the number of arrivals, and a continuous dependent variable, the number of COVID-19 cases. For all our models, we measured the success or failure by looking at the p-value to see if our null hypotheses can be rejected, and the R-squared value to determine how well the independent variables explain the variance in the dependent variables.
 
@@ -54,7 +54,7 @@ We first ran a simple linear regression model with only one predictor to have a 
 * One of the main challenges in investigating the hypothesis is the presence of substantial omitted variable bias, as it is impossible to account for all the factors that affect the number of positive covid-19 cases of different US states. Statewide public health policies, healthcare infrastructure, social/political attitudes towards the pandemic may be correlated with the number of COVID-19 cases, and if so will lead to omitted variable bias. Additionally some of these factors might be very hard or even impossible to measure. An fixed effects regression model, in theory, is able to control omitted variables in panel data that vary across entities (states) but not over time (eg. Healthcare infrastructure, social/political norms).
 * We implemented two fixed effects regression models (one is fixed-entity, the other is entity time-fixed), and the goal is to derive an OLS estimate of the coefficient of the independent variable (per capita weighted arrivals) for the hypothesis test.
 
-#### What is your interpretation of the results? Do accept or deny the hypothesis, or are you satisfied with your prediction accuracy? For prediction projects, we expect you to argue why you got the accuracy/success metric you have. Intuitively, how do you react to the results? Are you confident in the results?
+### What is your interpretation of the results? Do accept or deny the hypothesis, or are you satisfied with your prediction accuracy? For prediction projects, we expect you to argue why you got the accuracy/success metric you have. Intuitively, how do you react to the results? Are you confident in the results?
 
 **Simple Linear Regression**
 
@@ -91,7 +91,7 @@ From the other regressions, we can see that model 1c(w) performed the best in te
 * Adding time fixed effects to the fixed-effects regression model makes little changes to the results, as the coefficient value of the variable of interest is the same. A rationale for this analysis is to see whether our data is able to absorb some federal US government policies that are implemented nationwide, such as coronavirus aid relief or travel requirements for international travelers from high-risk countries. So an interpretation of this result can be that there is no significant omitted variable bias arising from unobserved variables that are constant across states.
 
 
-#### For your visualization, why did you pick this graph? What alternative ways might you communicate the result? Were there any challenges visualizing the results, if so, what where they? Will your visualization require text to provide context or is it standalone (either is fine, but it's recognize which type your visualization is)?
+### For your visualization, why did you pick this graph? What alternative ways might you communicate the result? Were there any challenges visualizing the results, if so, what where they? Will your visualization require text to provide context or is it standalone (either is fine, but it's recognize which type your visualization is)?
 
 **Regression Plots**
 
@@ -118,12 +118,12 @@ To visualize the results of our regression models, we created several regression
 * The main challenge in producing the map was making it work aesthetically -- there is no easy way to create subplots of choropleth maps in Plotly (the Python package used to create our visualizations), requiring use of Adobe Illustrator to properly construct the visualization. As Plotly was new to me, there was somewhat of a learning curve as I learned how to tune the visualization to its desired form given the limitations of the software. Another challenge was displaying all the information we hoped to show without cluttering the figure; we believe this was achieved successfully due to our tasteful use of colors, airplane images for overlaid the bubble map, and overall row/column design of the figure.
 * While the specific metrics of the visualization might require explanation (i.e. what is a weighted passenger per capita?) the overall message is clear -- a larger plane intuitively suggests more arriving passengers, whereas a darker color suggests higher rates of COVID. Most viewers would be able to intuitively understand this visualization because while the metrics themselves might require explanation, the underlying message is clear and is easily observable by the untrained eye.
 
-#### If you did a statistics test, are there any confounding trends or variables you might be observing?
+### If you did a statistics test, are there any confounding trends or variables you might be observing?
 
 * We are surprised to find that the coefficient on X for the multiple regression model and the fixed effects model are in fact higher than that in the linear regression model with a single regressor. In theory, when more independent variables are added the coefficient magnitude of X should be lower.   
 * Another interesting observation of the fixed-effects model is that the additional variables associated with state policies such as face mask mandates and quarantine mandates actually have more significant explanatory power for the increase in positive Covid-19 cases than the number of inbound air travelers. For instance if the binary variable quarantine mandate is true, then the increase in positive Covid-19 cases decreases by 3823.4. Confoundingly according to the model implementing mask mandate for a particular month increases the increase in positive Covid-19 cases by 639.11! However it is noted that the joint hypothesis that the coefficients on all of the additional variables is 0 cannot be rejected at the 5% level.
 
-#### Discussion of visualization/explaining your results on a poster and a discussion of future directions.
+### Discussion of visualization/explaining your results on a poster and a discussion of future directions.
 
 * An issue that we did not address in our analysis is the fact that it is very likely that causality runs in both directions - the number of inbound flight passengers impacts the number of positive Covid-19 cases, and vice-versa. When simultaneous causality bias arises, multiple regression and fixed effects models simply cannot eliminate the bias. Given more time we would love to implement an instrumental variable regression model for our analysis, as it can generally obtain a consistent estimator of the unknown causal coefficients when the regressors are correlated with the error term. 
 
