@@ -1,5 +1,4 @@
 # Tech Report
-This is where you can type out your tech report.
 
 ### A defined hypothesis or prediction task, with clearly stated metrics for success.
 
