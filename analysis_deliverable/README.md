@@ -5,9 +5,12 @@ This is the analysis deliverable's master directory! Please use the following sh
 [Tech Report](tech_report/)
 
 ### Visualizations ###
-_You can edit this README to refer to your own visualizations once you upload them_
 
 [Visualizations](visualizations)
-- [Happy Panda](visualizations/figure_1.jpg)
-- [Worried Panda](visualizations/figure_2.jpg)
-- [Surprised Panda](visualizations/figure_3.jpg)
+- [Data exploration](visualizations/data_exploration.png)
+- [Absolute number of air passenger arrivals vs absolute number of new COVID-19 cases](visualizations/model_1a.png)
+- [Change in number of air passenger arrivals vs change in number of new COVID-19 cases](visualizations/model_1b.png)
+- [Per capita number of air passenger arrivals vs per capita number of new COVID-19 cases](visualizations/model_1c.png)
+- [Per capita weighted arrivals vs per capita number of new COVID-19 cases](visualizations/model_1cw.png)
+- [Polynomial Regression](visualizations/model_2.png)
+- [Heatmap of air travel and COVID rates](visualizations/map_viz.png)
