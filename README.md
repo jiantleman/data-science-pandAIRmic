@@ -40,7 +40,10 @@ This is the final project's master repo! Please use the following shortcut links
   _You can edit this README to refer to your own visualizations once you upload them_
 
   [Visualizations](final_deliverable/visualizations)
-  - [Happy Panda](final_deliverable/visualizations/figure_1.jpg)
-  - [Worried Panda](final_deliverable/visualizations/figure_2.jpg)
-  - [Surprised Panda](final_deliverable/visualizations/figure_3.jpg)
-
+  - [Data exploration](final_deliverable/visualizations/data_exploration.png)
+  - [Absolute number of air passenger arrivals vs absolute number of new COVID-19 cases](final_deliverable/visualizations/model_1a.png)
+  - [Change in number of air passenger arrivals vs change in number of new COVID-19 cases](final_deliverable/visualizations/model_1b.png)
+  - [Per capita number of air passenger arrivals vs per capita number of new COVID-19 cases](final_deliverable/visualizations/model_1c.png)
+  - [Per capita weighted arrivals vs per capita number of new COVID-19 cases](final_deliverable/visualizations/model_1cw.png)
+  - [Polynomial Regression](final_deliverable/visualizations/model_2.png)
+  - [Map of air passenger arrivals and COVID-19 rates](final_deliverable/visualizations/map_viz.png)
