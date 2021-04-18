@@ -18,3 +18,6 @@ _You can edit this README to refer to your own visualizations once you upload th
   - [Per capita weighted arrivals vs per capita number of new COVID-19 cases](visualizations/model_1cw.png)
   - [Polynomial Regression](visualizations/model_2.png)
   - [Map of air passenger arrivals and COVID-19 rates](visualizations/map_viz.png)
+
+  ### Presentation ###
+[Presentation](https://brown.zoom.us/rec/share/ezOTkHtOLnyd2djcqbWTQDD0fYsHSBUz-y9Ues7ja-35ZGIZ-HpdxVkeLEpGOgLJ.MYI_uPLuJ6YKY7i-)
